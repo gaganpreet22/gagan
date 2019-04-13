@@ -2,7 +2,25 @@
   <html lang="en">
    <head>
       <meta charset="utf-8">
+                 <script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
       <style>
+      
         body { 
           background-image: url("/images/sunset.jpg");
           background-repeat:no-repeat;
@@ -10,8 +28,13 @@
       </style>
            <title>Gagan's Website</title>
        </head>
+       <body onload="startTime()">
+
+<div id="txt"></div>
+
        
        <body>
+
        <center> <a href="Portfolio.html">Portfolio</a></center>
      <h1>
                This is easy and fun!
@@ -26,7 +49,8 @@
           </h2>
           <h2><a href="https://scratch.mit.edu/projects/248011263/#player">Scratch Game</a></h2>
           <h2><a href="https://repl.it/@KaurGaganpreet/MotionlessLovelyExabyte">Interactive Fiction</a></h2>
-         <h2><a href="Written Question - Section 2.pdf">Create Project Written Responses</a></h2>
+          <h2><a href="images/Written Question - Section 2.pdf"  download>Create Project Written Responses</a></h2>
+          <h2><a href="images/Program Code - Section 3.pdf"  download>Create Project Code</a></h2>
+          <h2><a href="/images/Explore Project - Wriiten Responses.pdf"  download>Explore Project Written Responses</a></h2>
       </body>
-    
   </html>
