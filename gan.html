@@ -1,56 +1,59 @@
 <!doctype html>
-  <html lang="en">
-   <head>
-      <meta charset="utf-8">
-                 <script>
-function startTime() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('txt').innerHTML =
-    h + ":" + m + ":" + s;
-    var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-}
-</script>
-      <style>
-      
-        body { 
-          background-image: url("/images/sunset.jpg");
-          background-repeat:no-repeat;
-        }
-      </style>
-           <title>Gagan's Website</title>
-       </head>
-       <body onload="startTime()">
+<html lang="en">
 
-<div id="txt"></div>
+<head>
+	<style>
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
 
-       
-       <body>
+		li {
+			float: left;
+		}
 
-       <center> <a href="Portfolio.html">Portfolio</a></center>
-     <h1>
-               This is easy and fun!
-          </h1>
-          
-          <h2>
-              Hey
-          </h2>
-          <h2> How are you doing?</h2>
-          <h2>
-              What a beautiful sunset!
-          </h2>
-          <h2><a href="https://scratch.mit.edu/projects/248011263/#player">Scratch Game</a></h2>
-          <h2><a href="https://repl.it/@KaurGaganpreet/MotionlessLovelyExabyte">Interactive Fiction</a></h2>
-          <h2><a href="images/Written Question - Section 2.pdf"  download>Create Project Written Responses</a></h2>
-          <h2><a href="images/Program Code - Section 3.pdf"  download>Create Project Code</a></h2>
-          <h2><a href="/images/Explore Project - Wriiten Responses.pdf"  download>Explore Project Written Responses</a></h2>
-      </body>
-  </html>
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 14px;
+			text-decoration: none;
+		}
+
+		li a:hover:not(.active) {
+			background-color: #111;
+		}
+
+		.active {
+			background-color: #2BF7A3;
+		}
+
+        body {
+			background-image: url("images/pastel-wallpaper.jpg");
+		}
+
+	</style>
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+    <ul>
+        <li><a class"active" href="https://html-gaganpreet22.c9users.io/gan.html">Home</a></li>
+        <li><a href="https://html-gaganpreet22.c9users.io/Work.html">Work</a></li>
+        <li><a href="https://html-gaganpreet22.c9users.io/Gaming.html">Games</a></li>
+    </ul>
+
+
+    <h1>
+         Gagan's Web 
+    </h1>
+
+    <img src="images/minion1.jpg" alt="Minion Joke" width="420" height="420">
+    
+</body>
+
+</html>
